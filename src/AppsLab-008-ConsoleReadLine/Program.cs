@@ -10,3 +10,7 @@ Console.WriteLine($"Hmm, {jedlo} znie skvele!");
 Console.WriteLine("Daj mi vsetky peniaze co mas!");
 string text = Console.ReadLine() ?? "0";
 Console.WriteLine("Nevadi tak nabuduce!");
+Console.WriteLine("Stlac klavesu: ");
+var key = Console.ReadKey();
+Console.WriteLine();
+Console.WriteLine($"Stlacili ste klavesu: {key.KeyChar}");
