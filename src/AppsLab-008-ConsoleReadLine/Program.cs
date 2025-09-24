@@ -9,4 +9,4 @@ string jedlo = Console.ReadLine() ?? "0";
 Console.WriteLine($"Hmm, {jedlo} znie skvele!");
 Console.WriteLine("Daj mi vsetky peniaze co mas!");
 string text = Console.ReadLine() ?? "0";
-Console.WriteLine("Tak chod do riti!");
+Console.WriteLine("Nevadi tak nabuduce!");
