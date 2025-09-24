@@ -1,8 +1,12 @@
 ﻿Console.WriteLine("Ako sa voláš?");
 string? meno = Console.ReadLine();
-Console.WriteLine("Ahoj, " + meno);
-
-Console.WriteLine("Koľko máš rokov?");
+Console.WriteLine($"Ahoj, {meno}! Kolko mas rokov?");
 string vstup = Console.ReadLine() ?? "0";
 int vek = int.Parse(vstup);
-Console.WriteLine("Máš " + vek + " rokov.");
+Console.WriteLine("Aha, mas teda 15 rokov");
+Console.WriteLine("Ake je tvoje oblubene jedlo ?");
+string jedlo = Console.ReadLine() ?? "0";
+Console.WriteLine($"Hmm, {jedlo} znie skvele!");
+Console.WriteLine("Daj mi vsetky peniaze co mas!");
+string text = Console.ReadLine() ?? "0";
+Console.WriteLine("Tak chod do riti!");
