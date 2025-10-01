@@ -56,14 +56,16 @@ using System.ComponentModel.Design;
 Console.WriteLine("Zadaj prve cislo: ");
 int prveCislo = int.Parse(Console.ReadLine()!);
 
-//nacitam 2. cislo (konverzia na cislo)
-Console.WriteLine("Zadaj druhe cislo: ");
-int druheCislo = int.Parse(Console.ReadLine()!);
+
 
 // nacitam operaciu ( nacitam ako string)
 string operacia = ("+, -, *, /, %");
 Console.WriteLine("Zadaj operaciu (+, -, *, /, %): ");
 operacia = Console.ReadLine();
+
+//nacitam 2. cislo (konverzia na cislo)
+Console.WriteLine("Zadaj druhe cislo: ");
+int druheCislo = int.Parse(Console.ReadLine()!);
 
 
 // vykonam operaciu
