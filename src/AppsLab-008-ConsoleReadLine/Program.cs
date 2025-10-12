@@ -69,32 +69,28 @@ int druheCislo = int.Parse(Console.ReadLine()!);
 
 
 // vykonam operaciu
-decimal vysledok = 0;
-if (operacia == "+")
+int vysledok = operacia switch
 {
-    vysledok = prveCislo + druheCislo;
-}
-else if (operacia == "-")
-{
-    vysledok = prveCislo - druheCislo;
-}
-else if (operacia == "*")
-{
-    vysledok = prveCislo * druheCislo;
-}
-else if (operacia == "/")
-{
-    vysledok = prveCislo / (decimal)druheCislo; 
-}
-else if (operacia == "%")
-{
-    vysledok = prveCislo % druheCislo;
-}
+    "+" => prveCislo + druheCislo,
+    "-" => prveCislo - druheCislo,
+    "*" => prveCislo * druheCislo,
+    "/" => prveCislo / druheCislo,
+    "%" => prveCislo % druheCislo,
+    _ => throw new InvalidOperationException("Neplatna operacia")
+};
+// vypisem vysledok
+Console.WriteLine($"Vysledok je: {vysledok}");
 
 
-    // vypisem vysledok
-    Console.WriteLine($"Vysledok operacie je: {vysledok}");
-    
+
+
+
+
+
+
+
+
+
 
 
 
