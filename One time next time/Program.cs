@@ -150,7 +150,7 @@ int vek = ZiskajVek();
 VypisUdaje(meno, vek);
 string ZiskajMeno()
 {
-    Console.WriteLine("Zadaj svoje meno: ");
+   Console.WriteLine("Zadaj svoje meno: ");
     string meno = Console.ReadLine()!;
     return meno;
 }
@@ -165,3 +165,5 @@ void VypisUdaje(string meno, int vek)
 {
     Console.WriteLine($"Ahoj, {meno} tvoj vek je {vek}");
 }
+
+
