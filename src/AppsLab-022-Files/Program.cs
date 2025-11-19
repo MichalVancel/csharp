@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Net.Mime.MediaTypeNames;
+string way = "MojSubor.txt";
+Console.WriteLine(File.ReadAllText(way));
+Console.WriteLine("Napíš niečo");
+string text = Console.ReadLine();
+ while (text != "koniec")
+{
+    
+    File.AppendAllText(way, $"{text} \n ");
+    text = Console.ReadLine();
+    
+   
+}
+
+
+
